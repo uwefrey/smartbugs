@@ -1,20 +1,20 @@
 # SmartBugs: A Framework to Analyze Solidity Smart Contracts
 
-![Smartbugs build](https://github.com/smartbugs/smartbugs/workflows/build/badge.svg)
- <a href="https://github.com/smartbugs/smartbugs/releases">
+![Smartbugs build](https://github.com/uwefrey/smartbugs/workflows/build/badge.svg)
+ <a href="https://github.com/uwefrey/smartbugs/releases">
         <img alt="Smartbugs release" src="https://img.shields.io/github/release/smartbugs/smartbugs.svg">
 </a>
-<a href="https://github.com/smartbugs/smartbugs/blob/master/LICENSE">
+<a href="https://github.com/uwefrey/smartbugs/blob/master/LICENSE">
         <img alt="Smartbugs license" src="https://img.shields.io/github/license/smartbugs/smartbugs.svg?color=blue">
 </a>
 <br />
 <a href="#Supported-Tools">
         <img alt="Analysis tools" src="https://img.shields.io/badge/Analysis tools-10-blue">
 </a>
-<a href="https://github.com/smartbugs/smartbugs/blob/master/dataset">
+<a href="https://github.com/uwefrey/smartbugs/blob/master/dataset">
         <img alt="SB Curated Smart Contracts" src="https://img.shields.io/badge/SB Curated Smart Contracts-143-blue">
 </a>
-<a href="https://github.com/smartbugs/smartbugs/blob/master/dataset">
+<a href="https://github.com/uwefrey/smartbugs/blob/master/dataset">
         <img alt="SB Wild Smart Contracts" src="https://img.shields.io/badge/SB Wild Smart Contracts-47,398-blue">
 </a>
 
@@ -54,10 +54,10 @@ SmartBugs is an execution framework aiming at simplifying the execution of analy
 
 Once you have Docker and Python3 installed your system, follow the steps:
 
-1. Clone [SmartBugs's repository](https://github.com/smartbugs/smartbugs):
+1. Clone [SmartBugs's repository](https://github.com/uwefrey/smartbugs):
 
 ```
-git clone https://github.com/smartbugs/smartbugs.git
+git clone https://github.com/uwefrey/smartbugs.git
 ```
 
 2. Install all the Python requirements:
@@ -114,16 +114,16 @@ We make available three smart contract datasets with SmartBugs:
 
 | Vulnerability | Description | Level |
 | --- | --- | -- |
-| [Reentrancy](https://github.com/smartbugs/smartbugs/blob/master/dataset/reentrancy) | Reentrant function calls make a contract to behave in an unexpected way | Solidity |
-| [Access Control](https://github.com/smartbugs/smartbugs/blob/master/dataset/access_control) | Failure to use function modifiers or use of tx.origin | Solidity |
-| [Arithmetic](https://github.com/smartbugs/smartbugs/blob/master/dataset/arithmetic) | Integer over/underflows | Solidity |
-| [Unchecked Low Level Calls](https://github.com/smartbugs/smartbugs/blob/master/dataset/unchecked_low_level_calls) | call(), callcode(), delegatecall() or send() fails and it is not checked | Solidity |
-| [Denial Of Service](https://github.com/smartbugs/smartbugs/blob/master/dataset/denial_of_service) | The contract is overwhelmed with time-consuming computations | Solidity |
-| [Bad Randomness](https://github.com/smartbugs/smartbugs/blob/master/dataset/bad_randomness) | Malicious miner biases the outcome | Blockchain |
-| [Front Running](https://github.com/smartbugs/smartbugs/blob/master/dataset/front_running) | Two dependent transactions that invoke the same contract are included in one block | Blockchain |
-| [Time Manipulation](https://github.com/smartbugs/smartbugs/blob/master/dataset/time_manipulation) | The timestamp of the block is manipulated by the miner | Blockchain |
-| [Short Addresses](https://github.com/smartbugs/smartbugs/blob/master/dataset/short_addresses) | EVM itself accepts incorrectly padded arguments | EVM |
-| [Unknown Unknowns](https://github.com/smartbugs/smartbugs/blob/master/dataset/other) | Vulnerabilities not identified in DASP 10 | N.A |
+| [Reentrancy](https://github.com/uwefrey/smartbugs/blob/master/dataset/reentrancy) | Reentrant function calls make a contract to behave in an unexpected way | Solidity |
+| [Access Control](https://github.com/uwefrey/smartbugs/blob/master/dataset/access_control) | Failure to use function modifiers or use of tx.origin | Solidity |
+| [Arithmetic](https://github.com/uwefrey/smartbugs/blob/master/dataset/arithmetic) | Integer over/underflows | Solidity |
+| [Unchecked Low Level Calls](https://github.com/uwefrey/smartbugs/blob/master/dataset/unchecked_low_level_calls) | call(), callcode(), delegatecall() or send() fails and it is not checked | Solidity |
+| [Denial Of Service](https://github.com/uwefrey/smartbugs/blob/master/dataset/denial_of_service) | The contract is overwhelmed with time-consuming computations | Solidity |
+| [Bad Randomness](https://github.com/uwefrey/smartbugs/blob/master/dataset/bad_randomness) | Malicious miner biases the outcome | Blockchain |
+| [Front Running](https://github.com/uwefrey/smartbugs/blob/master/dataset/front_running) | Two dependent transactions that invoke the same contract are included in one block | Blockchain |
+| [Time Manipulation](https://github.com/uwefrey/smartbugs/blob/master/dataset/time_manipulation) | The timestamp of the block is manipulated by the miner | Blockchain |
+| [Short Addresses](https://github.com/uwefrey/smartbugs/blob/master/dataset/short_addresses) | EVM itself accepts incorrectly padded arguments | EVM |
+| [Unknown Unknowns](https://github.com/uwefrey/smartbugs/blob/master/dataset/other) | Vulnerabilities not identified in DASP 10 | N.A |
 
 
 ### SB Wild
@@ -164,7 +164,7 @@ To run it in the entire dataset, use `solidiFI` instead of `solidiFI/tx_origin`.
 When we use a remote dataset for the first time, we are asked to confirm the creation of the local copy.
 
 ## Work that uses SmartBugs
-- [SmartBugs was used to analyze 47,587 smart contracts](https://joaoff.com/publication/2020/icse) (work published at ICSE 2020). These contracts are available in a [separate repository](https://github.com/smartbugs/smartbugs-wild). The results are also in [their own repository](https://github.com/smartbugs/smartbugs-results).
+- [SmartBugs was used to analyze 47,587 smart contracts](https://joaoff.com/publication/2020/icse) (work published at ICSE 2020). These contracts are available in a [separate repository](https://github.com/uwefrey/smartbugs-wild). The results are also in [their own repository](https://github.com/uwefrey/smartbugs-results).
 - [SmartBugs was used to evaluate a simple extension of Smartcheck](https://joaoff.com/publication/2020/ase) (work published at ASE 2020, _Tool Demo Track_)
 - ... you are more than welcome to add your own work here!
 
